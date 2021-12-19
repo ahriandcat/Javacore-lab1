@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Bài 2");
         //Bai2
         Check check = new Check();
         Scanner sc = new Scanner(System.in);
@@ -25,6 +26,7 @@ public class Main {
         sc.nextLine();
 
         //Bai1
+        System.out.println("Bài 1");
         System.out.println("Nhập vào chuỗi 1: ");
         String chuoi_1 = sc.nextLine();
         System.out.println("Chuỗi 1 là: " + chuoi_1);
