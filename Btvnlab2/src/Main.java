@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //Bai1
+        //Bai2
         Check check = new Check();
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập điểm thực hành : ");
@@ -24,7 +24,7 @@ public class Main {
         check.checkPoint(c);
         sc.nextLine();
 
-        //Bai2
+        //Bai1
         System.out.println("Nhập vào chuỗi 1: ");
         String chuoi_1 = sc.nextLine();
         System.out.println("Chuỗi 1 là: " + chuoi_1);
