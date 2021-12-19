@@ -7,9 +7,17 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập điểm thực hành : ");
         double a = sc.nextDouble();
+        while (a>10) {
+            System.out.println("Nhập lại điểm thực hành");
+             a = sc.nextDouble();
+        }
         System.out.println("Điểm thực hành là : " + a);
         System.out.println("Nhập điểm lý thuyết : ");
         double b = sc.nextDouble();
+        while (b>10) {
+            System.out.println("Nhập lại điểm lý thuyết");
+            b = sc.nextDouble();
+        }
         System.out.println("Điểm lý thuyết là : " + b);
         double c = (a+b)/2;
         System.out.println("Điểm trung bình là: " + c);
@@ -26,3 +34,4 @@ public class Main {
         check.checkString(chuoi_1,chuoi_2);
     }
 }
+
