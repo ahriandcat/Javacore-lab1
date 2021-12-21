@@ -19,14 +19,14 @@ public class Main {
         System.out.println("Bài 2");
         System.out.println("Nhập điểm thực hành : ");
         double a = sc.nextDouble();
-        while (a>10) {
+        while (a>10||a<0) {
             System.out.println("Nhập lại điểm thực hành");
             a = sc.nextDouble();
         }
         System.out.println("Điểm thực hành là : " + a);
         System.out.println("Nhập điểm lý thuyết : ");
         double b = sc.nextDouble();
-        while (b>10) {
+        while (b>10||b<0) {
             System.out.println("Nhập lại điểm lý thuyết");
             b = sc.nextDouble();
         }
