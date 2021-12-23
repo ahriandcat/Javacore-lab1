@@ -9,7 +9,7 @@ public class Main {
         for (int i=0;i<chuoi.length();i++) {
             if (chuoi.charAt(i) == character) {
                 count++;
-                System.out.println("Vị trí của ký tự 'o' là : " + i);
+                System.out.println("Vị trí của ký tự 'o' lần thứ "+count+ " là : " + i);
             }
         }
         System.out.println("Số lần xuất hiện ký tự " + character + " là : " + count+" lần ");
