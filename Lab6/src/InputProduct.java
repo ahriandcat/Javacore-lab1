@@ -33,10 +33,10 @@ public class InputProduct {
         return (sellPrice-importPrice)*soldNumber;
     }
 
-    public Product[] addProduct (int size) {
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Nhập số loại sản phẩm : ");
-//        int size = sc.nextInt();
+    public Product[] addProduct () {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhập số loại sản phẩm : ");
+        int size = sc.nextInt();
         Product[] products = new Product[size];
         for (int i=0;i<size;i++){
             products[i]= createProduct();

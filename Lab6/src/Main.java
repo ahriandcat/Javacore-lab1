@@ -1,7 +1,10 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         InputProduct input = new InputProduct();
-        Product[] products = input.addProduct(2);
+        Scanner sc = new Scanner(System.in);
+        Product[] products = input.addProduct();
         input.show(products);
     }
 }
