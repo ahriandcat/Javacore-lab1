@@ -130,7 +130,7 @@ public class ProductService {
         while (sold > quantity){
             System.out.println("Sold number cannot be bigger than quantity ");
             System.out.println("Input another sold number : ");
-            sold = Integer.parseInt(sc.nextLine());
+            sold = sc.nextInt();
         }
 
         Product newProduct = new Product(id,name,price,quantity,type,sold);
