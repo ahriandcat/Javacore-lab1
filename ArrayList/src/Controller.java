@@ -19,34 +19,18 @@ public class Controller {
     }
 
     public static void mainMenu() {
-        boolean a = true;
-        while (a) {
+        while (true) {
             menu();
             int choice = Integer.parseInt(sc.nextLine());
             switch (choice) {
-                case 1:
-                    service.printProductArray(products);
-                    break;
-                case 2:
-                    service.searchByName(products);
-                    break;
-                case 3:
-                    service.searchByType(products);
-                    break;
-                case 4:
-                    service.updateNameAndSellPrice(products);
-                    break;
-                case 5:
-                    service.deleteProduct(products);
-                    break;
-                case 6:
-                    service.addProducts(products);
-                    break;
-                case 0:
-                    System.exit(0);
-                    break;
-                default:
-                    System.out.println("This option is not avalable");
+                case 1 -> service.printProductArray(products);
+                case 2 -> service.searchByName(products);
+                case 3 -> service.searchByType(products);
+                case 4 -> service.updateNameAndSellPrice(products);
+                case 5 -> service.deleteProduct(products);
+                case 6 -> service.addProducts(products);
+                case 0 -> System.exit(0);
+                default -> System.out.println("This option is not avalable");
             }
         }
     }
