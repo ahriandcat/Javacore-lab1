@@ -1,6 +1,5 @@
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.lang.reflect.Type;
@@ -73,6 +72,12 @@ public class Service {
         }
     }
     public void searchByCategory(ArrayList<Movie>movies){
+        Collections.sort(movies, new Comparator<Movie>() {
+            @Override
+            public int compare(Movie o1, Movie o2) {
+                return o1.getId()-o2.getId();
+            }
+        });
         System.out.println("Category search : ");
         Scanner sc = new Scanner(System.in);
         String c = sc.nextLine();
