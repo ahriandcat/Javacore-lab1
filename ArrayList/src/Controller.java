@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class Controller {
     static Scanner sc = new Scanner(System.in);
-    static ProductService service = new ProductService();
-    static ArrayList<Product> products = service.getAllProduct();
+//    static ProductService service = new ProductService();
+    static ArrayList<Product> products = ProductService.getAllProduct();
 
     public static void menu(){
         System.out.println("-------------------------------------------");
@@ -23,12 +23,12 @@ public class Controller {
             menu();
             int choice = Integer.parseInt(sc.nextLine());
             switch (choice) {
-                case 1 -> service.printProductArray(products);
-                case 2 -> service.searchByName(products);
-                case 3 -> service.searchByType(products);
-                case 4 -> service.updateNameAndSellPrice(products);
-                case 5 -> service.deleteProduct(products);
-                case 6 -> service.addProducts(products);
+                case 1 -> ProductService.printProductArray(products);
+                case 2 -> ProductService.searchByName(products);
+                case 3 -> ProductService.searchByType(products);
+                case 4 -> ProductService.updateNameAndSellPrice(products);
+                case 5 -> ProductService.deleteProduct(products);
+                case 6 -> ProductService.addProducts(products);
                 case 0 -> System.exit(0);
                 default -> System.out.println("This option is not avalable");
             }

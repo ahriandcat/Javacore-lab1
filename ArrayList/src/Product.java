@@ -5,10 +5,10 @@ public class Product {
     private String name;
     private double sellPrice;
     private int quantity;
-    private String type;
+    private Type type;
     private int soldNumber;
 
-    public Product(int id, String name, double sellPrice, int quantity, String type, int soldNumber) {
+    public Product(int id, String name, double sellPrice, int quantity, Type type, int soldNumber) {
         this.id = id;
         this.name = name;
         this.sellPrice = sellPrice;
@@ -49,11 +49,11 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public String getType() {
+    public Type getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(Type type) {
         this.type = type;
     }
 
@@ -70,7 +70,7 @@ public class Product {
         DecimalFormat formater = new DecimalFormat("###,###");
         return "Product id : " + id +
                 ", name :" + name  +
-                ", sellPrice : " + formater.format(sellPrice) +
+                ", sellPrice : " + formater.format(sellPrice)+" vnd" +
                 ", quantity : " + quantity +
                 ", type : " + type +
                 ", soldNumber : " + soldNumber;

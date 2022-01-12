@@ -1,3 +1,7 @@
 public enum Type {
-    Houseware, Food, Fashion;
+    Houseware,
+    Food,
+    Fashion;
+
+
 }
