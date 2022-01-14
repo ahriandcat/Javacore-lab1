@@ -52,6 +52,7 @@ public class Controller {
                                     }
                                     case 4 -> signIn = false;
                                     case 0 -> System.exit(0);
+                                    default -> System.out.println("Không có lựa chọn này");
                                 }
                             }
                         }
@@ -97,6 +98,7 @@ public class Controller {
                         System.out.println("Tài khoản không tồn tại");
                     }
                 }
+                default -> System.out.println("Không có lựa chọn này");
             }
         }
     }
