@@ -137,7 +137,7 @@ public class Service {
         if (genderChoose == 1){
             gender = Gender.nam;
         }
-        if (genderChoose == 1){
+        if (genderChoose == 2){
             gender = Gender.nữ;
         }
 
